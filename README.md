@@ -1,4 +1,7 @@
 # SpringTutorials [![Build Status](https://travis-ci.org/fishercoder1534/SpringTutorials.svg?branch=master)](https://travis-ci.org/fishercoder1534/SpringTutorials)
 
-This is a Maven managed project, so just fire up your IntelliJ/Eclipse and open this project as a Maven project, then your IDE will smile. ^ ^
-It saves you from all of the depedency management hassel as it saves me from downloading/managing all those Spring/Commons/Logging jars and put them on my classpath.
+Steps to get started on this project:
+1. `git clone https://github.com/fishercoder1534/SpringTutorials.git`;
+2. Open Intellij, File -> Open -> click the pom.xml file on your local, select open as Project;
+3. Click on the Maven icon on the right side of your Intellij to let Maven download all dependencies to your local;
+4. Add `javax.annotation` as a library in your Intellij: open Project Structure -> Libraries -> click `+` icon, select `Maven library`, look for `javax.annotation` and add it;
