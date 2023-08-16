@@ -13,7 +13,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.12</version>
+            <version>1.18.26</version>
             <scope>provided</scope>
         </dependency>
 
@@ -28,7 +28,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>4.1.6.RELEASE</version>
+            <version>6.0.9</version>
         </dependency>
 
         <!-- The spring-aop module provides an AOP Alliance-compliant aspect-oriented
@@ -36,7 +36,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
-            <version>4.1.6.RELEASE</version>
+            <version>6.0.6</version>
         </dependency>
 
         <!-- The spring-webmvc module (also known as the Web-Servlet module) contains
@@ -45,7 +45,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>4.1.6.RELEASE</version>
+            <version>6.0.9</version>
         </dependency>
 
         <!-- The spring-web module provides basic web-oriented integration features
@@ -54,9 +54,13 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>4.1.6.RELEASE</version>
+            <version>6.0.6</version>
         </dependency>
 
     </dependencies>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
 
 </project>
