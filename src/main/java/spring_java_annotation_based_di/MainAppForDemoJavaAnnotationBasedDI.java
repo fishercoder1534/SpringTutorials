@@ -12,20 +12,22 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class MainAppForDemoJavaAnnotationBasedDI {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
+        AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext();
 
-        ctx.register(Gospel1Config.class, TextEditorConfig.class,
+        annotationConfigApplicationContext.register(Gospel1Config.class, TextEditorConfig.class,
                 HelloWorldConfig.class);
-        ctx.refresh();
+        annotationConfigApplicationContext.refresh();
 
-        Gospel1 luke = ctx.getBean(Gospel1.class);
+        Gospel1 luke = annotationConfigApplicationContext.getBean(Gospel1.class);
         luke.setReflection("Gospel 1 is the book of Luke!");
         System.out.println(luke.getReflection());
 
-        TextEditor te = ctx.getBean(TextEditor.class);
+        TextEditor te = annotationConfigApplicationContext.getBean(TextEditor.class);
         te.spellCheck();
 
-        HelloWorld hw = ctx.getBean(HelloWorld.class);
+        HelloWorld helloWorld = annotationConfigApplicationContext.getBean(HelloWorld.class);
+        helloWorld.setMessage("Hello World!");
+        helloWorld.getMessage();
 
         System.out.println("The program ends!");
     }
